@@ -19,7 +19,7 @@ const RouterComponent = () => {
         <Container>
           <Navigation />
           <Routes>
-            <Route path="/react-final-task" element={<Home />} />
+            <Route path="/react-main-task" element={<Home />} />
             <Route path="/quoting" element={<Quoting />} />
             <Route path="/search" element={<Search />} />
             <Route path="/eligibility" element={<Eligibility />} />
