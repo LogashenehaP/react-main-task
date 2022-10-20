@@ -20,6 +20,7 @@ const RouterComponent = () => {
           <Navigation />
           <Routes>
             <Route path="/react-main-task" element={<Home />} />
+            <Route path="/" element={<Home/>}/>
             <Route path="/quoting" element={<Quoting />} />
             <Route path="/search" element={<Search />} />
             <Route path="/eligibility" element={<Eligibility />} />
