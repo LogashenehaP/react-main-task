@@ -22,7 +22,6 @@ export const CardItem = styled.div`
   box-shadow: 0 16px 32px 0 rgba(33, 28, 28, 0.1);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   border-radius: 20px;
   background-color: white;
 
