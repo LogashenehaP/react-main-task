@@ -26,7 +26,7 @@ const RouterComponent = () => {
             <Route path="/eligibility" element={<Eligibility />} />
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/application" element={<Application />}>
-              <Route path="applications" element={<ApplicationsNested />} />
+              <Route path="" element={<ApplicationsNested />} />
               <Route
                 path="applicationMoreInfo"
                 element={<ApplicationMoreInfo />}

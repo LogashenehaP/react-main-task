@@ -8,7 +8,7 @@ function Application() {
   return (
     <>
       <ApplicationContainer>
-        <LinkStyle to="applications">
+        <LinkStyle to="">
           <Heading>{navigationContent.applications}</Heading>
         </LinkStyle>
         <LinkStyle to="applicationMoreInfo">

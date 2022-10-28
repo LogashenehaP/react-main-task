@@ -9,6 +9,9 @@ position: relative;
 @media (max-width: 768px) {
  top:400px;
   }
+  @media (max-width: 375px) {
+ top:1070px;
+  }
 
 /* background-color:'black';
 color:'white';

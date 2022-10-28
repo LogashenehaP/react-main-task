@@ -31,6 +31,12 @@ export const CardItem = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 320px) {
+    font-size: 12px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -47,6 +53,11 @@ export const CardContainer = styled.div`
     left: 10px;
     right: 10px;
     gap: 10px;
+  }
+  @media (max-width: 375px) {
+    top: 60px;
+    flex-wrap: wrap;
+    margin: 20px;
   }
 `;
 
@@ -74,12 +85,29 @@ export const NewContainer = styled.div`
     top: 420px;
     margin: 0 auto;
   }
+  @media (max-width: 375px) {
+    padding: 10px;
+    left: 10px;
+    right: 10px;
+    flex-wrap: wrap;
+    top: 730px;
+
+    margin: 0 auto;
+  }
+  @media (max-width: 320px) {
+    top: 760px;
+  }
 `;
 export const NewSubContainer = styled.div`
   width: 48%;
   padding: 20px;
   height: 166px;
-  background-color: rgba(74, 74, 74, 0.05); ;
+  background-color: rgba(74, 74, 74, 0.05);
+  @media (max-width: 375px) {
+    width: 100%;
+    justify-content: center;
+    height: 220px;
+  }
 `;
 export const OverflowContainer = styled.div`
   overflow-y: scroll;

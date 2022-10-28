@@ -40,7 +40,7 @@ function ApplicationsNested() {
   }
   return (
     <Container>
-      <h3>Manage Applications</h3>
+      <Heading>Manage Applications</Heading>
       <InputAndButtonContainer>
         <InputContainer>
           <SearchSpace>

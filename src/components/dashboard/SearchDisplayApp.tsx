@@ -12,7 +12,7 @@ import {
 import { FiUserPlus, FiUserX } from 'react-icons/fi';
 import DownArrowImage from '../../../src/assets/images/down-arrow.png';
 import { useState } from 'react';
-import { Heading } from '../common/Display/Home/HomeStyle';
+import { Heading } from '../common/Display/Application/ApplicationStyle';
 import { extraDetails } from '../../resources/String';
 interface AppProps {
   name: string;

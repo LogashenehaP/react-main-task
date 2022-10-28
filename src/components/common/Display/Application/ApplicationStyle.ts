@@ -10,6 +10,11 @@ export const ApplicationContainer = styled.div`
   width: 80%;
   margin: 0 auto;
   padding: 20px 0px;
+  @media (max-width: 320px) {
+ gap:10px;
+ font-size:12px;
+
+  }
 `;
 
 export const LinkStyle = styled(Link)`
@@ -24,8 +29,9 @@ export const SubContainer = styled.div`
 export const Heading = styled.h2`
   font-size: 20px;
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 13px;
   }
+
 `;
 export const Container = styled.div`
   width: 80%;
@@ -50,12 +56,16 @@ export const InputBox = styled.input`
   padding: 10px;
   outline: none;
   border: none;
-
   font-size: 14px;
 
   ::placeholder {
     color: #4b4b4b;
   }
+  @media (max-width: 320px) {
+ padding:0;
+
+  }
+
 `;
 export const PageInput = styled.input`
   /* width:80px; */
@@ -66,7 +76,7 @@ export const PageInput = styled.input`
   border-radius: 8px;
 `;
 export const SearchSpace = styled.div`
-  /* width: 25%; */
+ 
   display: flex;
   justify-content: space-around;
   font-size: 18px;
@@ -75,6 +85,13 @@ export const SearchSpace = styled.div`
   border: 1px solid black;
   color: #4b4b4b;
   border-radius: 8px;
+  @media (max-width: 320px) {
+width:100%;
+justify-content:center;
+
+  }
+
+
 `;
 export const PageCountContainer = styled.div`
   display: flex;
@@ -90,22 +107,30 @@ export const SearchIcon = styled(FiSearch)`
   padding-top: 9px;
 `;
 export const Select = styled.select`
-  padding: 0;
+  padding: 10px;
   margin: 0;
   color: #4b4b4b;
-  padding: 10px;
   outline: none;
   border: none;
   font-size: 14px;
+  @media (max-width: 320px) {
+ padding:0;
+
+  }
 `;
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap:wrap;
   font-size: 18px;
   padding: 5px;
   gap: 30px;
   margin: 10px;
   color: #4b4b4b;
+  @media (max-width: 320px) {
+justify-content:center;
+
+  }
 `;
 export const PersonList = styled.div`
   display: flex;
