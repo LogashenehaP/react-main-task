@@ -37,7 +37,7 @@ export const CardItem = styled.div`
     justify-content: center;
     align-items: center;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     font-size: 14px;
     padding: 10px;
     justify-content: center;
@@ -65,7 +65,7 @@ export const CardContainer = styled.div`
     flex-wrap: wrap;
     margin: 20px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     top: 60px;
     flex-wrap: wrap;
     margin: 20px;
@@ -127,7 +127,7 @@ export const NewSubContainer = styled.div`
     justify-content: center;
     height: 220px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     width: 100%;
     justify-content: center;
     height: 220px;
