@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-main-task/static/css/main.e6c13ad2.css",
-    "main.js": "/react-main-task/static/js/main.ec396c69.js",
+    "main.js": "/react-main-task/static/js/main.3918bdb2.js",
     "static/js/787.4b90c9ae.chunk.js": "/react-main-task/static/js/787.4b90c9ae.chunk.js",
     "static/media/iconography-system-support.svg": "/react-main-task/static/media/iconography-system-support.e00392f8618ae254b35418046b045cd8.svg",
     "index.html": "/react-main-task/index.html",
     "static/media/iconography-objects-binoculars.webp": "/react-main-task/static/media/iconography-objects-binoculars.302e7941548eb10c000e.webp",
     "main.e6c13ad2.css.map": "/react-main-task/static/css/main.e6c13ad2.css.map",
-    "main.ec396c69.js.map": "/react-main-task/static/js/main.ec396c69.js.map",
+    "main.3918bdb2.js.map": "/react-main-task/static/js/main.3918bdb2.js.map",
     "787.4b90c9ae.chunk.js.map": "/react-main-task/static/js/787.4b90c9ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.ec396c69.js"
+    "static/js/main.3918bdb2.js"
   ]
 }
