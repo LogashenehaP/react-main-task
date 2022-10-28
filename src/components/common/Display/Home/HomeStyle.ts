@@ -84,7 +84,7 @@ export const NewContainer = styled.div`
   width: 85%;
   margin: 0 auto;
   position: absolute;
-  top: 370px;
+  top: 380px;
   display: flex;
   left: 80px;
   justify-content: 'space-around';
@@ -93,16 +93,7 @@ export const NewContainer = styled.div`
   @media (max-width: 768px) {
     padding: 10px;
     left: 45px;
-    top: 420px;
-    margin: 0 auto;
-  }
-  @media (max-width: 375px) {
-    padding: 10px;
-    left: 10px;
-    right: 10px;
-    flex-wrap: wrap;
-    top: 730px;
-
+    top: 390px;
     margin: 0 auto;
   }
   @media (max-width: 425px) {
@@ -110,15 +101,20 @@ export const NewContainer = styled.div`
     left: 10px;
     right: 10px;
     flex-wrap: wrap;
-    top: 730px;
+    top: 800px;
+    margin: 0 auto;
 
   }
+
   @media (max-width: 320px) {
-    top: 760px;
+    top: 800px;
   }
-  @media (max-width: 1024px) {
-
+  @media (min-width: 769px) and (max-width: 1024px) {
+    padding: 10px;
+    left: 45px;
+    right:45px;
     top: 450px;
+    margin: 0 auto;
   }
 `;
 export const NewSubContainer = styled.div`
@@ -144,9 +140,6 @@ export const OverflowContainer = styled.div`
   @media (max-width: 375px) {
 font-size:12px;
   }
-  @media (max-width: 425px) {
-font-size:14px;
-  }
 `;
 export const ToolList = styled.div`
   display: flex;
@@ -155,7 +148,7 @@ export const ToolList = styled.div`
   @media (max-width: 375px) {
 font-size:12px;
   }
-  @media (max-width: 425px) {
-font-size:14px;
+   @media (max-width: 375px) {
+font-size:12px;
   }
 `;

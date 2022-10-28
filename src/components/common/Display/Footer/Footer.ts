@@ -10,16 +10,20 @@ position: relative;
  top:400px;
   }
   @media (max-width: 375px) {
- top:1070px;
+ top:1110px;
  font-size:12px;
   }
-  @media (max-width: 425px) {
- top:1070px;
- font-size:14px;
+  @media (max-width: 320px) {
+ top:1110px;
+ font-size:12px;
   }
-  @media (max-width: 1024px) {
-    top:470px;
+  @media (min-width: 769px) and (max-width: 1024px) {
+    top:450px;
   }
+  @media (min-width: 376px) and (max-width: 767px) {
+    top:1120px;
+  }
+ 
 
 
 /* background-color:'black';
