@@ -113,9 +113,15 @@ export const OverflowContainer = styled.div`
   overflow-y: scroll;
   height: 100px;
   scrollbar-width: thin;
+  @media (max-width: 375px) {
+font-size:12px;
+  }
 `;
 export const ToolList = styled.div`
   display: flex;
   gap: 20px;
   padding: 10px;
+  @media (max-width: 375px) {
+font-size:12px;
+  }
 `;

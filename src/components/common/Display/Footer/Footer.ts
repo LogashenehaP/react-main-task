@@ -12,6 +12,9 @@ position: relative;
   @media (max-width: 375px) {
  top:1070px;
   }
+  @media (max-width: 375px) {
+font-size:12px;
+  }
 
 /* background-color:'black';
 color:'white';
