@@ -43,7 +43,6 @@ export const InnerExtraDetails = styled.div`
   color: black;
   @media (max-width:375px) {
   padding:10px;
-
   }
 `;
 
@@ -53,7 +52,13 @@ export const ExtraApplicationDetails = styled.div`
   gap: 50px;
   justify-content: space-around;
 
-  @media (max-width:375px) {
+  @media (max-width:376px) {
+    gap:30px;
+    justify-content:flex-start;
+    align-items: flex-start;
+    font-size:12px;
+  }
+  @media (max-width:426px) {
     gap:30px;
     justify-content:flex-start;
     align-items: flex-start;
@@ -66,7 +71,7 @@ export const LogInIcon = styled(FiUserPlus)`
 `;
 export const Heading = styled.h2`
  font-size:14px;
- @media (max-width:375px) {
+ @media (max-width:376px) {
    font-size:12px;
   }
 `;

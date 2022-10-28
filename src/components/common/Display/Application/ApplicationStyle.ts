@@ -90,7 +90,16 @@ width:100%;
 justify-content:center;
 
   }
+  @media (max-width: 376px) {
+width:100%;
+justify-content:center;
 
+  }
+  @media (max-width: 426px) {
+width:100%;
+justify-content:center;
+
+  }
 
 `;
 export const PageCountContainer = styled.div`
@@ -128,6 +137,14 @@ export const ButtonContainer = styled.div`
   margin: 10px;
   color: #4b4b4b;
   @media (max-width: 320px) {
+justify-content:center;
+
+  }
+  @media (max-width: 376px) {
+justify-content:center;
+
+  }
+  @media (max-width: 426px) {
 justify-content:center;
 
   }
