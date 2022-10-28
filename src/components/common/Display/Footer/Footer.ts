@@ -13,6 +13,13 @@ position: relative;
  top:1070px;
  font-size:12px;
   }
+  @media (max-width: 425px) {
+ top:1070px;
+ font-size:14px;
+  }
+  @media (max-width: 1024px) {
+    top:470px;
+  }
 
 
 /* background-color:'black';

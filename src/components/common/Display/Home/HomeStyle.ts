@@ -37,6 +37,12 @@ export const CardItem = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 425px) {
+    font-size: 14px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -55,6 +61,11 @@ export const CardContainer = styled.div`
     gap: 10px;
   }
   @media (max-width: 375px) {
+    top: 60px;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  @media (max-width: 425px) {
     top: 60px;
     flex-wrap: wrap;
     margin: 20px;
@@ -94,8 +105,20 @@ export const NewContainer = styled.div`
 
     margin: 0 auto;
   }
+  @media (max-width: 425px) {
+    padding: 10px;
+    left: 10px;
+    right: 10px;
+    flex-wrap: wrap;
+    top: 730px;
+
+  }
   @media (max-width: 320px) {
     top: 760px;
+  }
+  @media (max-width: 1024px) {
+
+    top: 450px;
   }
 `;
 export const NewSubContainer = styled.div`
@@ -108,6 +131,11 @@ export const NewSubContainer = styled.div`
     justify-content: center;
     height: 220px;
   }
+  @media (max-width: 425px) {
+    width: 100%;
+    justify-content: center;
+    height: 220px;
+  }
 `;
 export const OverflowContainer = styled.div`
   overflow-y: scroll;
@@ -116,6 +144,9 @@ export const OverflowContainer = styled.div`
   @media (max-width: 375px) {
 font-size:12px;
   }
+  @media (max-width: 425px) {
+font-size:14px;
+  }
 `;
 export const ToolList = styled.div`
   display: flex;
@@ -123,5 +154,8 @@ export const ToolList = styled.div`
   padding: 10px;
   @media (max-width: 375px) {
 font-size:12px;
+  }
+  @media (max-width: 425px) {
+font-size:14px;
   }
 `;
