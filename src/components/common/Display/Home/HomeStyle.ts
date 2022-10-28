@@ -96,7 +96,7 @@ export const NewContainer = styled.div`
     top: 390px;
     margin: 0 auto;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     padding: 10px;
     left: 10px;
     right: 10px;
