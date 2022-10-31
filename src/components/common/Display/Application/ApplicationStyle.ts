@@ -189,8 +189,6 @@ export const PopUp = styled.div`
   width: 250px;
   top: 50%;
   left: 50%;
-  backdrop-filter: blur(8px);
-  vertical-align: middle;
 `;
 
 export const PopUpButtonContainer = styled.div`
@@ -201,3 +199,14 @@ export const PopUpButtonContainer = styled.div`
 export const PopUpHeading = styled.div`
   border-bottom: 2px solid lightblue;
 `;
+
+export const Modal = styled.div`
+width: 100vw;
+height: 100vh;
+top: 0;
+left: 0;
+right: 0;
+background: rgba(49,49,49,0.8);
+bottom: 0;
+position: fixed;`
+

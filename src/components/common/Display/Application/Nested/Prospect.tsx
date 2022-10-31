@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FiUserPlus } from 'react-icons/fi';
-
+import { Modal } from '../ApplicationStyle';
 import {
   PageCountContainer,
   ButtonBox,
@@ -115,6 +115,7 @@ function Prospect() {
       </InputAndButtonContainer>
       {isRemove && (
         <>
+        <Modal>
           <PopUp>
             <PopUpHeading>
               <Heading>Remove Customer</Heading>
@@ -125,6 +126,7 @@ function Prospect() {
               <AddButton onClick={() => deleteToDo(index)}>Ok</AddButton>
             </PopUpButtonContainer>
           </PopUp>
+          </Modal>
         </>
       )}
       <PersonList>

@@ -9,7 +9,7 @@ export const NavigationBar = styled.nav`
   color: white;
   border-bottom: 2px solid lightskyblue;
   @media (max-width: 768px) {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 `;
 export const NavItemsResponsive = styled.nav`
@@ -17,31 +17,33 @@ export const NavItemsResponsive = styled.nav`
   position: absolute;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height:100%;
   top: 50px;
-  right: 0;
+  bottom:0;
+  left: 0;
   flex-direction: column;
   transition: all 1s ease-out;
   padding: 20px;
-  background: grey;
-  color: white;
+  background: white;
+  color: black;
   z-index: 1;
 `;
 
 export const ItemResponsive = styled.div`
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: blue;
+    color: black;
   }
 `;
 
 export const NavigationBarResponsive = styled.nav`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   display: none;
   @media (max-width: 768px) {
     display: flex;
+   
   }
 `;
 
@@ -65,6 +67,10 @@ export const Text = styled.p`
 export const LinkStyle = styled(Link)`
   text-decoration: none;
   color: white;
+`;
+export const MobileLinkStyle = styled(Link)`
+  text-decoration: none;
+  color: black;
 `;
 
 export const Container = styled.div`

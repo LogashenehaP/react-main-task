@@ -5,6 +5,7 @@ import {
   NavItems,
   Text,
   LinkStyle,
+  MobileLinkStyle,
   Icon,
 } from './NavStyle';
 import { navigationContent } from '../../../resources/String';
@@ -21,6 +22,11 @@ function Navigation() {
   return (
     <>
       <NavigationBar>
+      <NavigationBarResponsive>
+          <div onClick={() => handleChange()}>
+            {isMobile ? <ImCross /> : <FaBars />}
+          </div>
+        </NavigationBarResponsive>
         <NavItems>
           <LinkStyle to="/">{navigationContent.home}</LinkStyle>
         </NavItems>
@@ -51,43 +57,40 @@ function Navigation() {
           <Icon />
           {navigationContent.logOut}
         </NavItems>
-        <NavigationBarResponsive>
-          <div onClick={() => handleChange()}>
-            {isMobile ? <ImCross /> : <FaBars />}
-          </div>
-        </NavigationBarResponsive>
+        
       </NavigationBar>
       {isMobile && (
+        
         <NavItemsResponsive>
           <ItemResponsive>
-            <LinkStyle to="/" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle to="/" onClick={() => setIsMobile(!isMobile)}>
               {navigationContent.home}
-            </LinkStyle>
+            </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <LinkStyle to="/quoting" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle to="/quoting" onClick={() => setIsMobile(!isMobile)}>
               {navigationContent.quoting}
-            </LinkStyle>
+            </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <LinkStyle to="/application" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle to="/application" onClick={() => setIsMobile(!isMobile)}>
               {navigationContent.applications}
-            </LinkStyle>
+            </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <LinkStyle to="/appointment" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle to="/appointment" onClick={() => setIsMobile(!isMobile)}>
               {navigationContent.scope_Of_Appointment}
-            </LinkStyle>
+            </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <LinkStyle to="/appointment" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle to="/appointment" onClick={() => setIsMobile(!isMobile)}>
               {navigationContent.scope_Of_Appointment}
-            </LinkStyle>
+            </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <LinkStyle to="/search" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle to="/search" onClick={() => setIsMobile(!isMobile)}>
               {navigationContent.provider_Search}
-            </LinkStyle>
+            </MobileLinkStyle>
           </ItemResponsive>
         </NavItemsResponsive>
       )}
