@@ -23,7 +23,7 @@ import { useEffect, useState } from 'react';
 import { personDetails } from '../../../../../data/CardDetails';
 import SearchDisplay from '../../../../dashboard/SearchDisplayApp';
 import { mapPersons } from '../../../../utils/mapPersons';
-function ApplicationsNested() {
+const ApplicationsNested = (props: any) => {
   const [text, setText] = useState<string>('');
   const [persons, setPersons] = useState<PersonModel[] | null>(null);
   useEffect(() => {
@@ -81,7 +81,7 @@ function ApplicationsNested() {
           </PageCountContainer>
         </ButtonContainer>
       </InputAndButtonContainer>
-
+      <h3>{props.displayPersons}</h3>
       <PersonList>
         {displayPersons.length !== 0 &&
           displayPersons.map((person, i) => {
@@ -109,6 +109,6 @@ function ApplicationsNested() {
       </PersonList>
     </Container>
   );
-}
+};
 
 export default ApplicationsNested;

@@ -103,7 +103,6 @@ export const NewContainer = styled.div`
     flex-wrap: wrap;
     top: 800px;
     margin: 0 auto;
-
   }
 
   @media (max-width: 320px) {
@@ -112,7 +111,7 @@ export const NewContainer = styled.div`
   @media (min-width: 769px) and (max-width: 1024px) {
     padding: 10px;
     left: 45px;
-    right:45px;
+    right: 45px;
     top: 450px;
     margin: 0 auto;
   }
@@ -138,7 +137,7 @@ export const OverflowContainer = styled.div`
   height: 100px;
   scrollbar-width: thin;
   @media (max-width: 375px) {
-font-size:12px;
+    font-size: 12px;
   }
 `;
 export const ToolList = styled.div`
@@ -146,9 +145,9 @@ export const ToolList = styled.div`
   gap: 20px;
   padding: 10px;
   @media (max-width: 375px) {
-font-size:12px;
+    font-size: 12px;
   }
-   @media (max-width: 375px) {
-font-size:12px;
+  @media (max-width: 375px) {
+    font-size: 12px;
   }
 `;
