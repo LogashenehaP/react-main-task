@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useMemo } from 'react';
 
 import { FiUserPlus } from 'react-icons/fi';
 import { Modal } from '../MainRouterPages/Application/ApplicationStyle';
@@ -37,10 +37,13 @@ const Prospect = () => {
   const [popUp, setPopUp] = useState(false);
   const [isRemove, setIsRemove] = useState(false);
   let index: number;
-  function handleChange(personId: number) {
-    index = personId;
-    setIsRemove(!isRemove);
-  }
+  const handleChange = useCallback(
+    (personId: number) => {
+      index = personId;
+      setIsRemove(!isRemove);
+    },
+    [popUp]
+  );
   useEffect(() => {
     const mappedPersons = mapPersons(personDetails);
     setPersons(mappedPersons);

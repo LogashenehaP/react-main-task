@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import {
   NavigationBar,
   NavigationBarResponsive,
@@ -12,18 +12,17 @@ import { navigationContent } from '../../../resources/String';
 import { FaBars } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import { NavItemsResponsive, ItemResponsive } from './NavStyle';
-const Navigation=()=> {
+
+const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
-  function handleChange() {
-    setIsMobile(!isMobile);
-  }
+
   return (
     <>
       <NavigationBar>
-      <NavigationBarResponsive>
-          <div onClick={() => handleChange()}>
+        <NavigationBarResponsive>
+          <div onClick={() => setIsMobile(!isMobile)}>
             {isMobile ? <ImCross /> : <FaBars />}
           </div>
         </NavigationBarResponsive>
@@ -49,19 +48,14 @@ const Navigation=()=> {
           </LinkStyle>
         </NavItems>
         <NavItems>
-          <LinkStyle to="/search">
-            {navigationContent.providerSearch}
-          </LinkStyle>
+          <LinkStyle to="/search">{navigationContent.providerSearch}</LinkStyle>
         </NavItems>
         <NavItems>
           <Icon />
           {navigationContent.logOut}
         </NavItems>
-        
       </NavigationBar>
-      {
-       isMobile && (
-        
+      {isMobile && (
         <NavItemsResponsive>
           <ItemResponsive>
             <MobileLinkStyle to="/" onClick={() => setIsMobile(!isMobile)}>
@@ -69,27 +63,42 @@ const Navigation=()=> {
             </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <MobileLinkStyle to="/quoting" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle
+              to="/quoting"
+              onClick={() => setIsMobile(!isMobile)}
+            >
               {navigationContent.quoting}
             </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <MobileLinkStyle to="/application" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle
+              to="/application"
+              onClick={() => setIsMobile(!isMobile)}
+            >
               {navigationContent.applications}
             </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <MobileLinkStyle to="/appointment" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle
+              to="/appointment"
+              onClick={() => setIsMobile(!isMobile)}
+            >
               {navigationContent.scopeOfAppointment}
             </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <MobileLinkStyle to="/appointment" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle
+              to="/appointment"
+              onClick={() => setIsMobile(!isMobile)}
+            >
               {navigationContent.scopeOfAppointment}
             </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
-            <MobileLinkStyle to="/search" onClick={() => setIsMobile(!isMobile)}>
+            <MobileLinkStyle
+              to="/search"
+              onClick={() => setIsMobile(!isMobile)}
+            >
               {navigationContent.providerSearch}
             </MobileLinkStyle>
           </ItemResponsive>
@@ -97,6 +106,6 @@ const Navigation=()=> {
       )}
     </>
   );
-}
+};
 
 export default Navigation;

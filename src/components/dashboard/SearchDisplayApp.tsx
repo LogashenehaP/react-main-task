@@ -9,9 +9,8 @@ import {
   ExtraApplicationDetails,
   LogInIcon,
 } from './SearchDisplayStyle';
-import { FiUserPlus, FiUserX } from 'react-icons/fi';
-import DownArrowImage from '../../../src/assets/images/down-arrow.png';
-import { useState } from 'react';
+
+import { useCallback, useState } from 'react';
 import { Heading } from '../../Pages/MainRouterPages/Application/ApplicationStyle';
 import { extraDetails } from '../../resources/String';
 interface AppProps {
@@ -49,9 +48,9 @@ const SearchDisplay: React.FC<AppProps> = ({
   createImage,
 }: AppProps) => {
   const [openDetails, setOpenDetails] = useState(false);
-  const toggle = () => {
+  const toggle = useCallback(() => {
     setOpenDetails(!openDetails);
-  };
+  }, [openDetails]);
   return (
     <>
       <DisplayContainer>

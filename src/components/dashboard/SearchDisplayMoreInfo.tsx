@@ -11,7 +11,7 @@ import { extraDetails } from '../../resources/String';
 import { RemoveIcon } from '../../Pages/MainRouterPages/Application/ApplicationStyle';
 import { FiBold, FiUserPlus, FiUserX } from 'react-icons/fi';
 import DownArrowImage from '../../../src/assets/images/down-arrow.png';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { PersonModel } from '../../model/PersonModel';
 interface AppProps {
   name: string;
@@ -33,11 +33,10 @@ const SearchDisplayMoreInfo: React.FC<AppProps> = ({
   pdfImage,
   personId,
 }: AppProps) => {
-  const [persons, setPersons] = useState<PersonModel[] | null>(null);
   const [openDetails, setOpenDetails] = useState(false);
-  const toggle = () => {
+  const toggle = useCallback(() => {
     setOpenDetails(!openDetails);
-  };
+  },[openDetails]);
   return (
     <>
       <DisplayContainer>
