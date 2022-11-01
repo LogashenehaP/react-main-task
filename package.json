@@ -1,6 +1,5 @@
 {
-  "homepage":"http://logashenehap.github.io/react-main-task",
-  "name": "main-task",
+ 
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -14,5 +14,6 @@ export interface PersonModel {
   zipCode: number;
   emailImage: string;
   pdfImage: string;
+  personId:number,
 }
 

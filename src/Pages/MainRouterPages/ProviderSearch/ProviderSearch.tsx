@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ProviderSearch() {
+const ProviderSearch=()=> {
   return <div>search page</div>;
 }
 

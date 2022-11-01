@@ -12,7 +12,7 @@ import {
 import { FiUserPlus, FiUserX } from 'react-icons/fi';
 import DownArrowImage from '../../../src/assets/images/down-arrow.png';
 import { useState } from 'react';
-import { Heading } from '../common/Display/Application/ApplicationStyle';
+import { Heading } from '../../Pages/MainRouterPages/Application/ApplicationStyle';
 import { extraDetails } from '../../resources/String';
 interface AppProps {
   name: string;
@@ -29,8 +29,10 @@ interface AppProps {
   pdfImage: string;
   emailImage: string;
   createImage: string;
+  personId: number;
 }
 const SearchDisplay: React.FC<AppProps> = ({
+  personId,
   name,
   progress,
   access,

@@ -14,7 +14,7 @@ import { ImCross } from 'react-icons/im';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavItemsResponsive, ItemResponsive } from './NavStyle';
-function Navigation() {
+const Navigation=()=> {
   const [isMobile, setIsMobile] = useState(false);
   function handleChange() {
     setIsMobile(!isMobile);
@@ -40,17 +40,17 @@ function Navigation() {
         </NavItems>
         <NavItems>
           <LinkStyle to="/eligibility">
-            {navigationContent.eligibility_Check}
+            {navigationContent.eligibilityCheck}
           </LinkStyle>
         </NavItems>
         <NavItems>
           <LinkStyle to="/appointment">
-            {navigationContent.scope_Of_Appointment}
+            {navigationContent.scopeOfAppointment}
           </LinkStyle>
         </NavItems>
         <NavItems>
           <LinkStyle to="/search">
-            {navigationContent.provider_Search}
+            {navigationContent.providerSearch}
           </LinkStyle>
         </NavItems>
         <NavItems>
@@ -59,7 +59,8 @@ function Navigation() {
         </NavItems>
         
       </NavigationBar>
-      {isMobile && (
+      {
+       isMobile && (
         
         <NavItemsResponsive>
           <ItemResponsive>
@@ -79,17 +80,17 @@ function Navigation() {
           </ItemResponsive>
           <ItemResponsive>
             <MobileLinkStyle to="/appointment" onClick={() => setIsMobile(!isMobile)}>
-              {navigationContent.scope_Of_Appointment}
+              {navigationContent.scopeOfAppointment}
             </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
             <MobileLinkStyle to="/appointment" onClick={() => setIsMobile(!isMobile)}>
-              {navigationContent.scope_Of_Appointment}
+              {navigationContent.scopeOfAppointment}
             </MobileLinkStyle>
           </ItemResponsive>
           <ItemResponsive>
             <MobileLinkStyle to="/search" onClick={() => setIsMobile(!isMobile)}>
-              {navigationContent.provider_Search}
+              {navigationContent.providerSearch}
             </MobileLinkStyle>
           </ItemResponsive>
         </NavItemsResponsive>

@@ -8,11 +8,11 @@ import {
   InnerExtraDetails,
 } from './SearchDisplayStyle';
 import { extraDetails } from '../../resources/String';
-import { RemoveIcon } from '../common/Display/Application/ApplicationStyle';
+import { RemoveIcon } from '../../Pages/MainRouterPages/Application/ApplicationStyle';
 import { FiBold, FiUserPlus, FiUserX } from 'react-icons/fi';
 import DownArrowImage from '../../../src/assets/images/down-arrow.png';
 import { useState } from 'react';
-import { PersonModel } from '../../../src/model/PersonModel';
+import { PersonModel } from '../../model/PersonModel';
 interface AppProps {
   name: string;
   accountNo: string;
@@ -21,6 +21,7 @@ interface AppProps {
   emailImage: string;
   arrowImage: string;
   arrowUpImage: string;
+  personId: number;
 }
 const SearchDisplayMoreInfo: React.FC<AppProps> = ({
   name,
@@ -30,6 +31,7 @@ const SearchDisplayMoreInfo: React.FC<AppProps> = ({
   arrowImage,
   arrowUpImage,
   pdfImage,
+  personId,
 }: AppProps) => {
   const [persons, setPersons] = useState<PersonModel[] | null>(null);
   const [openDetails, setOpenDetails] = useState(false);

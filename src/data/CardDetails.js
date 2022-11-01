@@ -2,28 +2,34 @@ import { navigationContent, textContent } from '../resources/String';
 import { image } from '../resources/Images';
 const CardDetails = [
   {
-    Image: image.dollar,
-    Heading: navigationContent.quoting,
-    Text: textContent.content,
+    cardId:1,
+    image: image.dollar,
+    heading: navigationContent.quoting,
+    text: textContent.content,
+    
   },
   {
-    Image: image.settings,
-    Heading: navigationContent.applications,
-    Text: textContent.content,
+    cardId:2,
+    image: image.settings,
+    heading: navigationContent.applications,
+    text: textContent.content,
   },
   {
-    Image: image.chat,
-    Heading: navigationContent.scope_Of_Appointment,
-    Text: textContent.content,
+    cardId:3,
+    image: image.chat,
+    heading: navigationContent.scope_Of_Appointment,
+    text: textContent.content,
   },
   {
-    Image: image.healthInsurance,
-    Heading: navigationContent.provider_Search_Heading,
-    Text: textContent.content,
+    cardId:4,
+    image: image.healthInsurance,
+    heading: navigationContent.provider_Search_Heading,
+    text: textContent.content,
   },
 ];
 export const personDetails = [
   {
+    personId:1,
     pdfImage: image.pdf,
     emailImage: image.email,
     descriptionImage: image.descriptionImage,
@@ -41,6 +47,7 @@ export const personDetails = [
     dateText: textContent.dateText,
   },
   {
+    personId:2,
     pdfImage: image.pdf,
     emailImage: image.email,
     descriptionImage: image.descriptionImage,
@@ -58,6 +65,7 @@ export const personDetails = [
     dateText: textContent.dateText,
   },
   {
+    personId:3,
     pdfImage: image.pdf,
     emailImage: image.email,
     descriptionImage: image.descriptionImage,
@@ -75,6 +83,7 @@ export const personDetails = [
     dateText: textContent.dateText,
   },
   {
+    personId:4,
     pdfImage: image.pdf,
     emailImage: image.email,
     descriptionImage: image.descriptionImage,
@@ -92,6 +101,7 @@ export const personDetails = [
     dateText: textContent.dateText,
   },
   {
+    personId:5,
     pdfImage: image.pdf,
     emailImage: image.email,
     descriptionImage: image.descriptionImage,
@@ -109,6 +119,7 @@ export const personDetails = [
     dateText: textContent.dateText,
   },
   {
+    personId:6,
     pdfImage: image.pdf,
     emailImage: image.email,
     descriptionImage: image.descriptionImage,
@@ -126,6 +137,7 @@ export const personDetails = [
     dateText: textContent.dateText,
   },
   {
+    personId:7,
     pdfImage: image.pdf,
     emailImage: image.email,
     descriptionImage: image.descriptionImage,

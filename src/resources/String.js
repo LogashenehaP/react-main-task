@@ -1,9 +1,9 @@
 const home = 'Home';
 const quoting = 'Quoting';
-const eligibility_Check = 'Eligibility check';
-const scope_Of_Appointment = 'Scope of Appointment';
-const provider_Search = 'ProviderSearch';
-const provider_Search_Heading = 'Eligibility Check Medicare and Medicaid';
+const eligibilityCheck = 'Eligibility check';
+const scopeOfAppointment = 'Scope of Appointment';
+const providerSearch = 'ProviderSearch';
+const providerSearchHeading = 'Eligibility Check Medicare and Medicaid';
 const applications = 'Applications';
 const logOut = 'Logout';
 const settingTool = 'Helpful Tool';
@@ -29,12 +29,12 @@ const action = 'Action Needed';
 export const navigationContent = {
   home,
   quoting,
-  scope_Of_Appointment,
-  provider_Search,
-  eligibility_Check,
+  scopeOfAppointment,
+  providerSearch,
+  eligibilityCheck,
   applications,
   logOut,
-  provider_Search_Heading,
+  providerSearchHeading,
   prospect,
   applications,
   ApplicationRequiring,

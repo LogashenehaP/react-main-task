@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Eligibility() {
+const Eligibility=()=>{
   return (
     <div>
       Eligibility check page

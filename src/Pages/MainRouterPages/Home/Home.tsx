@@ -11,26 +11,24 @@ import {
   NewSubContainer,
   ToolList,
 } from './HomeStyle';
-import CardDetails from '../../../../data/CardDetails';
-import { image } from '../../../../resources/Images';
-import { newContent } from '../../../../resources/String';
-import FooterComponent from '../Footer/FooterComponent';
-function Home() {
+import CardDetails from '../../../data/CardDetails';
+import { image } from '../../../resources/Images';
+import { newContent } from '../../../resources/String';
+import FooterComponent from '../../../components/common/Footer/FooterComponent';
+const Home = () => {
   return (
     <>
       <BodyContainer>
         <CardContainer>
           {CardDetails.map((item, i) => {
             return (
-              <>
-                <CardItem>
-                  <div>
-                    <img src={item.Image}></img>
-                  </div>
-                  <Heading>{item.Heading}</Heading>
-                  <div>{item.Text}</div>
-                </CardItem>
-              </>
+              <CardItem key={item.cardId}>
+                <div>
+                  <img src={item.image}></img>
+                </div>
+                <Heading>{item.heading}</Heading>
+                <div>{item.text}</div>
+              </CardItem>
             );
           })}
         </CardContainer>
@@ -74,6 +72,6 @@ function Home() {
       <FooterComponent />
     </>
   );
-}
+};
 
 export default Home;

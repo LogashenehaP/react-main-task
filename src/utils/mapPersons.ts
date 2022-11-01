@@ -1,4 +1,4 @@
-import { PersonModel } from '../../model/PersonModel';
+import { PersonModel } from '../model/PersonModel';
 export const mapPersons = (persons: any[]): PersonModel[] => {
   const allPersons = [] as PersonModel[];
 
@@ -8,6 +8,7 @@ export const mapPersons = (persons: any[]): PersonModel[] => {
 
   return persons.map((person, i) => {
     return {
+      personId:person.personId,
       pdfImage: person.pdfImage,
       emailImage: person.emailImage,
       descriptionImage: person.descriptionImage,

@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Quoting() {
+const Quoting = () => {
   return <div>Quoting page</div>;
-}
+};
 
 export default Quoting;

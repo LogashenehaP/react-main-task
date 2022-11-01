@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Appointment() {
+const Appointment=()=> {
   return <div>Scope of appointment page</div>;
 }
 
