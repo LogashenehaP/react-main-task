@@ -1,60 +1,63 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import {
   NavigationBar,
-  NavigationBarResponsive,
+  Hamburger,
   NavItems,
   Text,
   LinkStyle,
   MobileLinkStyle,
+  ItemResponsive,
   Icon,
+  NavItemsResponsive,
+  Menu,
 } from './NavStyle';
 import { navigationContent } from '../../../resources/String';
 import { FaBars } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
 import { useState } from 'react';
 
-import { NavItemsResponsive, ItemResponsive } from './NavStyle';
-
 const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
-
   return (
     <>
       <NavigationBar>
-        <NavigationBarResponsive>
-          <div onClick={() => setIsMobile(!isMobile)}>
-            {isMobile ? <ImCross /> : <FaBars />}
-          </div>
-        </NavigationBarResponsive>
-        <NavItems>
-          <LinkStyle to="/">{navigationContent.home}</LinkStyle>
-        </NavItems>
-        <NavItems>
-          <LinkStyle to="/quoting">{navigationContent.quoting}</LinkStyle>
-        </NavItems>
-        <NavItems>
-          <LinkStyle to="/application">
-            {navigationContent.applications}
-          </LinkStyle>
-        </NavItems>
-        <NavItems>
-          <LinkStyle to="/eligibility">
-            {navigationContent.eligibilityCheck}
-          </LinkStyle>
-        </NavItems>
-        <NavItems>
-          <LinkStyle to="/appointment">
-            {navigationContent.scopeOfAppointment}
-          </LinkStyle>
-        </NavItems>
-        <NavItems>
-          <LinkStyle to="/search">{navigationContent.providerSearch}</LinkStyle>
-        </NavItems>
-        <NavItems>
-          <Icon />
-          {navigationContent.logOut}
-        </NavItems>
+        <Hamburger onClick={() => setIsMobile(!isMobile)}>
+          {isMobile ? <ImCross /> : <FaBars />}
+        </Hamburger>
+        <Menu>
+          <NavItems>
+            <LinkStyle to="/">{navigationContent.home}</LinkStyle>
+          </NavItems>
+          <NavItems>
+            <LinkStyle to="/quoting">{navigationContent.quoting}</LinkStyle>
+          </NavItems>
+          <NavItems>
+            <LinkStyle to="/application">
+              {navigationContent.applications}
+            </LinkStyle>
+          </NavItems>
+          <NavItems>
+            <LinkStyle to="/eligibility">
+              {navigationContent.eligibilityCheck}
+            </LinkStyle>
+          </NavItems>
+          <NavItems>
+            <LinkStyle to="/appointment">
+              {navigationContent.scopeOfAppointment}
+            </LinkStyle>
+          </NavItems>
+          <NavItems>
+            <LinkStyle to="/search">
+              {navigationContent.providerSearch}
+            </LinkStyle>
+          </NavItems>
+          <NavItems>
+            <Icon />
+            {navigationContent.logOut}
+          </NavItems>
+        </Menu>
       </NavigationBar>
+
       {isMobile && (
         <NavItemsResponsive>
           <ItemResponsive>

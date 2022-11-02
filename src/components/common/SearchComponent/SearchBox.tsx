@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import {
   PageCountContainer,
   ButtonBox,
@@ -21,6 +21,7 @@ import { useContext } from 'react';
 
 const SearchBox = () => {
   const { text, setText } = useContext(CartContext);
+  console.log('search');
   return (
     <div>
       <InputAndButtonContainer>
@@ -67,4 +68,4 @@ const SearchBox = () => {
   );
 };
 
-export default SearchBox;
+export default React.memo(SearchBox);

@@ -1,15 +1,32 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FiLogOut } from 'react-icons/fi';
+import { FaBars } from 'react-icons/fa';
 export const NavigationBar = styled.nav`
-  display: flex;
-  justify-content: space-around;
   padding: 20px;
   background: #286ce2;
   color: white;
   border-bottom: 2px solid lightskyblue;
   @media (max-width: 768px) {
     justify-content: flex-start;
+    flex-direction: column;
+  }
+`;
+export const Menu = styled.div`
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  @media (max-width: 768px) {
+    padding: 20px;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: lightgrey;
+    color: black;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
   }
 `;
 export const NavItemsResponsive = styled.nav`
@@ -18,9 +35,9 @@ export const NavItemsResponsive = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 40%;
-  height:100%;
+  height: 100%;
   top: 50px;
-  bottom:0;
+  bottom: 0;
   left: 0;
   flex-direction: column;
   transition: all 1s ease-out;
@@ -37,13 +54,11 @@ export const ItemResponsive = styled.div`
   }
 `;
 
-export const NavigationBarResponsive = styled.nav`
-  display: flex;
-  justify-content: flex-start;
+export const Hamburger = styled.div`
   display: none;
-  @media (max-width: 768px) {
-    display: flex;
-   
+  @media screen and (max-width: 768px) {
+    display: block;
+    cursor: pointer;
   }
 `;
 
@@ -67,6 +82,11 @@ export const Text = styled.p`
 export const LinkStyle = styled(Link)`
   text-decoration: none;
   color: white;
+  @media (max-width: 768px) {
+    padding: 15px;
+    color: black;
+    text-align: center;
+  }
 `;
 export const MobileLinkStyle = styled(Link)`
   text-decoration: none;

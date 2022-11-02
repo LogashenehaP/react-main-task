@@ -11,13 +11,16 @@ import Quoting from '../../../Pages/MainRouterPages/Quoting/Quoting';
 import ApplicationMoreInfo from '../../../Pages/NestedRouterPages/ApplicationsMoreInfo';
 import Prospect from '../../../Pages/NestedRouterPages/Prospect';
 import ApplicationsNested from '../../../Pages/NestedRouterPages/Applications';
+import Navbar from '../NavBar/NavBar';
 
 const RouterComponent = () => {
   return (
     <>
       <BrowserRouter>
         <Container>
-          <Navigation />
+
+          <Navbar/>
+          {/* <Navigation /> */}
           <Routes>
             {/* <Route path="/react-main-task" element={<Home />} /> */}
             <Route path="/" element={<Home />} />

@@ -34,9 +34,10 @@ const SearchDisplayMoreInfo: React.FC<AppProps> = ({
   personId,
 }: AppProps) => {
   const [openDetails, setOpenDetails] = useState(false);
-  const toggle = useCallback(() => {
+  const toggle = () => {
     setOpenDetails(!openDetails);
-  },[openDetails]);
+    console.log("toggle");
+  };
   return (
     <>
       <DisplayContainer>

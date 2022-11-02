@@ -37,16 +37,24 @@ const Prospect = () => {
   const [popUp, setPopUp] = useState(false);
   const [isRemove, setIsRemove] = useState(false);
   let index: number;
-  const handleChange = useCallback(
-    (personId: number) => {
-      index = personId;
-      setIsRemove(!isRemove);
-    },
-    [popUp]
-  );
+  const handleChange = useCallback((personId: number) => {
+    index = personId;
+    setIsRemove(!isRemove);
+    console.log('handle change');
+  },[popUp]);
+
+  const deleteToDo = useCallback((index: number) => {
+      newList.splice(index, 1);
+      setPersons([...newList]);
+     setPopUp(!popUp);
+     setIsRemove(!isRemove);
+     console.log('handle delete');
+  },[isRemove,popUp]);
+
   useEffect(() => {
     const mappedPersons = mapPersons(personDetails);
-    setPersons(mappedPersons);
+     setPersons(mappedPersons);
+
   }, []);
   if (persons === null) return <Heading>loading</Heading>;
   let displayPersons = persons;
@@ -57,12 +65,13 @@ const Prospect = () => {
     );
   }
   const newList = displayPersons;
-  const deleteToDo = (index: number) => {
-    newList.splice(index, 1);
-    setPersons([...newList]);
-    setPopUp(!popUp);
-    setIsRemove(!isRemove);
-  };
+  // const deleteToDo = (index: number) => {
+  //   newList.splice(index, 1);
+  //   setPersons([...newList]);
+  //   setPopUp(!popUp);
+  //   setIsRemove(!isRemove);
+  //   console.log('handle delete');
+  // };
 
   return (
     <Container>

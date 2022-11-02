@@ -10,7 +10,7 @@ import {
   LogInIcon,
 } from './SearchDisplayStyle';
 
-import { useCallback, useState } from 'react';
+import {  useState } from 'react';
 import { Heading } from '../../Pages/MainRouterPages/Application/ApplicationStyle';
 import { extraDetails } from '../../resources/String';
 interface AppProps {
@@ -48,9 +48,9 @@ const SearchDisplay: React.FC<AppProps> = ({
   createImage,
 }: AppProps) => {
   const [openDetails, setOpenDetails] = useState(false);
-  const toggle = useCallback(() => {
+  const toggle = () => {
     setOpenDetails(!openDetails);
-  }, [openDetails]);
+  };
   return (
     <>
       <DisplayContainer>
