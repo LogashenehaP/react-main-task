@@ -64,9 +64,11 @@ export const Hamburger = styled.div`
 
 export const NavItems = styled.div`
   display: flex;
-  @media (max-width: 768px) {
+  align-items:center;
+  justify-content:center;
+  /* @media (max-width: 768px) {
     display: none;
-  }
+  } */
 `;
 
 export const Icon = styled(FiLogOut)`
